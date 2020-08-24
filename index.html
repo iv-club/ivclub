@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>인하벤처클럽</title>
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico" />
     <style>
-        body{
+        body {
             background-color: #2a2e3c;
-            width :1000px;
+            width: 1000px;
             font-family: 'Noto Sans KR', sans-serif;
 
 
         }
-        .img{
+
+        .img {
             position: relative;
-            background-image: url(eagle.png);
+            background-image: url('image/homeImage/eagle.png');
             height: 500px;
             width: 1500px;
             background-size: cover;
         }
-        .join1{
+
+        .join1 {
             position: relative;
             background-size: cover;
         }
-        .join2{
+
+        .join2 {
             position: absolute;
-            top:45%;
-            left:41%;
+            top: 45%;
+            left: 41%;
             transform: translate(-50%, -50%);
-            font-size:5px;
+            font-size: 5px;
             color: white;
             z-index: 2;
 
         }
-        .join3{
+
+        .join3 {
             position: absolute;
-            top:45%;
-            left:90%;
+            top: 45%;
+            left: 90%;
             transform: translate(-50%, -50%);
-            font-size:5px;
+            font-size: 5px;
             z-index: 2;
             color: black;
         }
 
-        .img .content{
+        .img .content {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:2rem;
+            font-size: 2rem;
             color: white;
             z-index: 2;
             text-align: center;
         }
 
-        .img .content1{
+        .img .content1 {
             position: absolute;
-            top:65%;
-            left:50%;
+            top: 65%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:3rem;
+            font-size: 3rem;
             color: #fdfd23;
             z-index: 2;
             text-align: center;
         }
 
-        .img1{
+        .img1 {
             position: relative;
-            background-image: url(main.png);
+            background-image: url(image/homeImage/main.png);
             height: 500px;
             width: 1500px;
             margin-top: 100px;
             background-size: cover;
         }
-        .img1 .content2{
+
+        .img1 .content2 {
             position: absolute;
-            top:30%;
-            left:15%;
+            top: 30%;
+            left: 15%;
             transform: translate(-50%, -50%);
-            font-size:15px;
+            font-size: 15px;
             color: white;
             z-index: 2;
             padding-left: 70px;
@@ -86,25 +93,28 @@
             padding-top: 8px;
             padding-bottom: 8px;
             text-align: center;
-            border : solid 5px yellow;
+            border: solid 5px yellow;
         }
-        .img1 .content2:hover{
+
+        .img1 .content2:hover {
             color: skyblue;
-            border : 5px solid skyblue
+            border: 5px solid skyblue
         }
-        .img1 .content3:hover{
+
+        .img1 .content3:hover {
             color: skyblue;
-            border : 5px solid skyblue
+            border: 5px solid skyblue
         }
-        .img1 .content4:hover{
+
+        .img1 .content4:hover {
             color: skyblue;
-            border : 5px solid skyblue
+            border: 5px solid skyblue
         }
 
         .img1 .content21 {
             position: absolute;
             top: 65%;
-            left:15%;
+            left: 15%;
             transform: translate(-50%, -50%);
             font-size: 12px;
             color: white;
@@ -113,15 +123,16 @@
             padding-right: 110px;
             padding-top: 8px;
             padding-bottom: 8px;
-            text-align: center;}
+            text-align: center;
+        }
 
 
-        .img1 .content3{
+        .img1 .content3 {
             position: absolute;
-            top:30%;
-            left:51%;
+            top: 30%;
+            left: 51%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 2;
             padding-left: 20px;
@@ -129,14 +140,15 @@
             padding-top: 4px;
             padding-bottom: 4px;
             text-align: center;
-            border : solid 5px yellow;
+            border: solid 5px yellow;
         }
-        .img1 .content31{
+
+        .img1 .content31 {
             position: absolute;
-            top:65%;
-            left:51%;
+            top: 65%;
+            left: 51%;
             transform: translate(-50%, -50%);
-            font-size:12px;
+            font-size: 12px;
             color: white;
             z-index: 2;
             padding-left: 110px;
@@ -145,12 +157,13 @@
             padding-bottom: 8px;
             text-align: center;
         }
-        .img1 .content4{
+
+        .img1 .content4 {
             position: absolute;
-            top:30%;
-            left:85%;
+            top: 30%;
+            left: 85%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 2;
             padding-left: 10px;
@@ -158,30 +171,32 @@
             padding-top: 4px;
             padding-bottom: 4px;
             text-align: center;
-            border : solid 5px yellow;
+            border: solid 5px yellow;
         }
 
-        .img1 .content41{
+        .img1 .content41 {
             position: absolute;
-            top:70%;
-            left:80%;
+            top: 70%;
+            left: 80%;
             transform: translate(-25%, -63%);
-            font-size:12px;
+            font-size: 12px;
             color: white;
             z-index: 2;
             text-align: center;
         }
-        .img1 .st{
+
+        .img1 .st {
             position: absolute;
             left: 97%;
 
             z-index: 2;
-            font-size:15px;
+            font-size: 15px;
             color: white;
             text-align: center;
         }
-        .yo .st1{
-            font-size:15px;
+
+        .yo .st1 {
+            font-size: 15px;
             color: white;
             z-index: 2;
             margin-left: 20px;
@@ -190,7 +205,7 @@
 
 
 
-        #intro1{
+        #intro1 {
             width: 100%;
             height: 80px;
 
@@ -199,7 +214,8 @@
             color: #fdfd23;
 
         }
-        #intro2{
+
+        #intro2 {
             width: 100%;
             height: 67px;
             font-size: 50px;
@@ -207,10 +223,10 @@
             color: #ffffff;
         }
 
-        .yo p{
-            font-size:20px;
-            color:white;
-            font-weight:bold;
+        .yo p {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
             height: 250px;
             width: 1250px;
             margin-top: 50px;
@@ -219,51 +235,55 @@
 
         }
 
-        #test_btn1{
-            border-top-left-radius:30px;
-            border-bottom-left-radius:30px;
-            border-bottom-right-radius:30px;
-            border-top-right-radius:30px;
-            margin-right:-4px;
-            font-size:50px;
+        #test_btn1 {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-right: -4px;
+            font-size: 40px;
             font-family: 'Noto Sans KR', sans-serif;
         }
-        #btn_group button{
-            border:5px solid tomato;
-            background-color: rgba(0,0,0,0);
-            color:tomato;
-            padding:5px;
+
+        #btn_group button {
+            border: 5px solid #BDBDBD;
+            background-color: rgba(0, 0, 0, 0);
+            color: #BDBDBD;
+            padding: 5px;
             transition: 0.5s;
             transition-duration: 0.5s;
 
 
         }
-        #btn_group button:hover{
-            color:#ffd700;
-            border:5px solid #ffd700;
+
+        #btn_group button:hover {
+            color: #ffd700;
+            border: 5px solid #ffd700;
 
         }
 
-        .img51{
+        .img51 {
             position: relative;
-            background-image: url(i1.png);
+            background-image: url(image/homeImage/i1.png);
             margin-top: 60px;
             height: 600px;
             width: 250px;
 
             background-size: cover;
-            display:inline-block;
+            display: inline-block;
 
         }
-        .img51:hover{
+
+        .img51:hover {
             filter: brightness(200%);
         }
-        .img51 .content51{
+
+        .img51 .content51 {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 3;
             text-align: center;
@@ -271,402 +291,519 @@
 
 
         }
-        .wrap .st2{
 
-            font-size:15px;
+        .wrap .st2 {
+
+            font-size: 15px;
             color: white;
             z-index: 2;
             margin-left: 20px;
         }
 
-        .img52{
+        .img52 {
             position: relative;
-            background-image: url(i2.png);
+            background-image: url(image/homeImage/i2.png);
             margin-left: 30px;
             margin-top: 60px;
             height: 600px;
             width: 250px;
             background-size: cover;
-            display:inline-block;
+            display: inline-block;
         }
-        .img52:hover{
+
+        .img52:hover {
             filter: brightness(200%);
         }
-        .img52 .content52{
+
+        .img52 .content52 {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 2;
             text-align: center;
 
         }
-        .img53{
+
+        .img53 {
             position: relative;
-            background-image: url(i3.png);
+            background-image: url(image/homeImage/i3.png);
             margin-left: 30px;
             margin-top: 60px;
             height: 600px;
             width: 250px;
             background-size: cover;
-            display:inline-block;
+            display: inline-block;
         }
-        .img53:hover{
+
+        .img53:hover {
             filter: brightness(200%);
         }
-        .img53 .content53{
+
+        .img53 .content53 {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 1;
             text-align: center;
 
         }
-        .img54{
+
+        .img54 {
             position: relative;
-            background-image: url(i4.png);
+            background-image: url(image/homeImage/i4.png);
             margin-left: 30px;
             margin-top: 60px;
             height: 600px;
             width: 250px;
             background-size: cover;
-            display:inline-block;
+            display: inline-block;
         }
-        .img54:hover{
+
+        .img54:hover {
             filter: brightness(200%);
         }
-        .img54 .content54{
+
+        .img54 .content54 {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size:20px;
+            font-size: 20px;
             color: white;
             z-index: 2;
             text-align: center;
 
         }
-        .wrap{
+
+        .wrap {
             display: flex;
             text-align: center;
         }
-        .yo{
-            display:flex;
+
+        .yo {
+            display: flex;
         }
-        .logo1{
+
+        .logo1 {
             margin-left: 200px;
             margin-top: 50px;
         }
-        .last1{
+
+        .last1 {
             display: flex;
 
         }
-        .last1 .st3{
-            font-size:15px;
+
+        .last1 .st3 {
+            font-size: 15px;
             color: white;
             z-index: 2;
             margin-left: 1450px;
             margin-top: 50px;
         }
-        .last1 .last{
+
+        .last1 .last {
             display: inline-block;
             position: absolute;
             margin-left: 270px;
         }
-        .bot{
+
+        .bot {
             margin-top: 100px;
             color: white;
             font-size: 5px;
             display: flex;
             width: 1500px;
         }
-        .bot1{
+
+        .bot1 {
             margin-left: 50px;
             color: #fdfd23;
         }
-        .bot2{
+
+        .bot2 {
             margin-left: 200px;
 
         }
-        .bot3{
+
+        .bot3 {
             margin-left: 200px;
 
         }
-        .bot4{
+
+        .bot4 {
             margin-left: 200px;
 
         }
-        .bot5{
+
+        .bot5 {
             margin-left: 150px;
 
         }
-        .bi1{
+
+        .bi1 {
             display: flex;
         }
-        .bi1 .bi1t{
+
+        .bi1 .bi1t {
             margin-left: 20px;
         }
-        .bi2{
+
+        .bi2 {
             display: flex;
         }
-        .bi2 .bi2t{
+
+        .bi2 .bi2t {
             margin-left: 20px;
         }
-        .bi3{
+
+        .bi3 {
             display: flex;
         }
-        .bi3 .bi3t{
+
+        .bi3 .bi3t {
             margin-left: 20px;
         }
-        .ib1{
+
+        .ib1 {
             margin-top: 5px;
         }
-        .ib2{
+
+        .ib2 {
             margin-top: 5px;
         }
-        .ib3{
+
+        .ib3 {
             margin-top: 5px;
         }
-        .join{
+
+        .join {
             color: #fdfd23;
         }
-        .de{display: flex;
+
+        .de {
+            display: flex;
             margin-left: 170px;
         }
-        .up{
+
+        .up {
             display: flex;
             font-size: 7px;
             color: white;
             margin-bottom: 10px;
         }
-        .up .up0{
+
+        .up .up0 {
             margin-right: 550px;
             margin-left: 30px;
         }
-        .up .up1{
+
+        .up .up1 {
             margin-left: 160px;
         }
-        .up .up2{
-            margin-left: 100px;
-        }
-        .up .up3{
-            margin-left: 100px;
-        }
-        .up .up4{
-            margin-left: 100px;
-        }
-        .up .up5{
-            margin-left: 100px;
-        }
-        a:link {text-decoration: none; font-size: 5px; color: white; }
-        a:visited {text-decoration: none; color: white; }
-        a:active {text-decoration: none; color: white; }
-        a:hover {text-decoration: none; color: orange; }
 
+        .up .up2 {
+            margin-left: 100px;
+        }
 
+        .up .up3 {
+            margin-left: 100px;
+        }
+
+        .up .up4 {
+            margin-left: 100px;
+        }
+
+        .up .up5 {
+            margin-left: 100px;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-size: 5px;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: orange;
+        }
     </style>
 
 </head>
 
 <body>
-<div class="up">
-    <div class ="up0">
-        <a href="index.html"><h1>INHAVENTURECLUB</h1></a>
-    </div>
-    <div class="up1">
-        <a href="index.html"><h1>HOME</h1></a>
-    </div>
-    <div class="up2">
-        <a href="javascript:alert('곧 업데이트 예정입니다.');"><h1>IVC</h1></a>
-    </div>
-    <div class="up3">
-        <a href="활동페이지.html"><h1>ACTIVITY</h1></a>
-    </div>
-    <div class="up4">
-        <a href="javascript:alert('곧 업데이트 예정입니다.');"><h1>PERFORMANCE</h1></a>
-    </div>
-    <div class="up5">
-        <a href="javascript:alert('곧 업데이트 예정입니다.');"><h1>NEWS</h1></a>
-    </div>
-</div>
-<div class="img" >
-    <div class="content"  >
-        <h1>인하대 창업 네트워크</h1><br><br><br><br><br><br>
-    </div>
-    <div class="content1">
-        <h2>INHA VENTURE CLUB</h2>
-
-    </div>
-</div>
-<div class="yo">
-    <div class="st1" >
-        <h1>A</h1><h1>B</h1><h1>O</h1><h1>U</h1><h1>T</h1>
-    </div>
-    <div class="logo1">
-        <img src="logo.png" alt="로고이미지" width="270px" height="270px" >
-    </div>
-    <p>
-        <br><br>
-        1997년 5월 25일,<br>
-        인하대학교 공학 명예박사이자<br>
-        현 비트 컴퓨터 조현정 회장에 의해 설립되었습니다.<br><br>
-        창업을 희망하는 예비창업자들의 능동적 교류와 협력을 통해 창의적인 아이디어를 경쟁력있는 아이템으로 구성하여
-        가시적인 성과를 만드는 동아리입니다.
-    </p>
-</div>
-<div class="img1">
-    <div class="st" >
-        <h1>V</h1><h1>I</h1><h1>S</h1><h1>I</h1><h1>O</h1><h1>N</h1>
-    </div>
-    <div class="content2">
-        <h1>VALUE</h1>
-    </div>
-    <div class="content21">
-        <h1>사회 현상과 기업 연구를 통해</h1>
-        <h1>역량을 키워나가며</h1>
-        <h1>새로운 가치를 추구합니다.</h1>
-    </div>
-    <div class="content3">
-        <h2>INNOVATION</h2>
-    </div>
-    <div class="content31">
-        <h1>인하벤처클럽은</h1>
-        <h1>구성원의 혁신을 장려하며</h1>
-        <h1>혁신을 통해</h1>
-        <h1>항상 새로워집니다.</h1>
-    </div>
-    <div class="content4">
-        <h2>COOPERATION</h2>
-    </div>
-    <div class="content41">
-        <h1>열정을 바탕으로 뭉쳐 </h1>
-        <h1>동반자적 라이벌적</h1>
-        <h1>우정을 통하여</h1>
-        <h1>서로의 성장을 도모합니다.</h1>
-    </div>
-</div>
-<div class="wrap">
-    <div class="st2" >
-        <h1>A</h1><h1>C</h1><h1>T</h1><h1>I</h1><h1>V</h1><h1>I</h1><h1>T</h1><h1>Y</h1>
-    </div>
-    <div class="de">
-        <div class="img51">
-
-            <div class ="content51" >
-                <h1>1</h1>
-                <h1>이론</h1>
-            </div>
+    <div class="up">
+        <div class="up0">
+            <a href="index.html">
+                <h1>INHAVENTURECLUB</h1>
+            </a>
         </div>
-        <div class ="img52">
-            <div class ="content52">
-                <h1>2</h1>
-                <h1>도전</h1>
-            </div>
+        <div class="up1">
+            <a href="index.html">
+                <h1>HOME</h1>
+            </a>
         </div>
-
-        <div class ="img53">
-            <div class ="content53">
-                <h1>3</h1>
-                <h1>실전</h1>
-            </div>
+        <div class="up2">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>IVC</h1>
+            </a>
         </div>
-
-        <div class ="img54">
-            <div class ="content54">
-                <h1>4</h1>
-                <h1>기타</h1>
-            </div>
+        <div class="up3">
+            <a href="activity.html">
+                <h1>ACTIVITY</h1>
+            </a>
+        </div>
+        <div class="up4">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>PERFORMANCE</h1>
+            </a>
+        </div>
+        <div class="up5">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>NEWS</h1>
+            </a>
         </div>
     </div>
-</div>
-
-<div class="last1">
-    <div class="st3" >
-        <h1>C</h1><h1>O</h1><h1>N</h1><h1>T</h1><h1>A</h1><h1>C</h1><h1>T</h1>
-    </div>
-    <div class="last" style="width: 1000px">
-        <div>
-            <h5 id="intro1" >인하벤처클럽과 함께 하고 싶은가요?</h5>
-            <h5 id="intro2">2020-2학기 신입부원 모집</h5>
+    <div class="img">
+        <div class="content">
+            <h1>인하대 창업 네트워크</h1><br><br><br><br><br><br>
         </div>
+        <div class="content1">
+            <h2>INHA VENTURE CLUB</h2>
 
-        <div id="btn_group" style="text-align: center">
-            <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse target="_blank"> <button id="test_btn1">지원하기</button></a>
         </div>
     </div>
-</div>
-<div class="bot">
-    <div class ="bot1">
-        <h1>INHAVENTURECLUB</h1>
-    </div>
-    <div class ="bot2">
-        <div id="top"><a href=""><h1>About US</h1></a></div>
-
-        <br><div id="center"><a href="."><h1>Contact</h1></a></div><br>
-        <div id="bottom"><a href="."><h1>Terms & Conditions</h1></a></div>
-    </div>
-
-    <div class ="bot3">
-        <div class ="bi1">
-            <div class ="ib1">
-                <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="facebook.PNG" alt="페이스북" width="15pt" height="15pt"></a>
-            </div>
-            <div class="bi1t">
-                <a href="javascript:alert('곧 업데이트 예정입니다.');"><h1>Facebook</h1></a>
-            </div>
+    <div class="yo">
+        <div class="st1">
+            <br><br><br><br>
+            <h1>A</h1>
+            <h1>B</h1>
+            <h1>O</h1>
+            <h1>U</h1>
+            <h1>T</h1>
         </div>
-        <div class ="bi2">
-            <div class ="ib2">
-                <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="twitter.PNG" alt="트위터"  width="15pt" height="15pt"></a>
-            </div>
-            <div class="bi2t">
-                <a href="javascript:alert('곧 업데이트 예정입니다.');"><h1>Twitter</h1></a>
-            </div>
+        <div class="logo1">
+            <br><br><br><br>
+            <img src="image/homeImage/logo/logo.png" alt="로고이미지" width="270px" height="270px">
         </div>
-        <div class ="bi3">
+        <p>
+            <br><br><br><br>
+            1997년 5월 25일,<br>
+            인하대학교 공학 명예박사이자<br>
+            현 비트 컴퓨터 조현정 회장에 의해 설립되었습니다.<br><br>
+            창업을 희망하는 예비창업자들의 능동적 교류와 협력을 통해 창의적인 아이디어를 경쟁력있는 아이템으로 구성하여
+            가시적인 성과를 만드는 동아리입니다.
+        </p>
+    </div>
+    <div class="img1">
+        <div class="st">
+            <br><br><br><br>
+            <h1>V</h1>
+            <h1>I</h1>
+            <h1>S</h1>
+            <h1>I</h1>
+            <h1>O</h1>
+            <h1>N</h1>
+        </div>
+        <div class="content2">
+            <h1>VALUE</h1>
+        </div>
+        <div class="content21">
+            <h1>사회 현상과 기업 연구를 통해</h1>
+            <h1>역량을 키워나가며</h1>
+            <h1>새로운 가치를 추구합니다.</h1>
+        </div>
+        <div class="content3">
+            <h2>INNOVATION</h2>
+        </div>
+        <div class="content31">
+            <h1>인하벤처클럽은</h1>
+            <h1>구성원의 혁신을 장려하며</h1>
+            <h1>혁신을 통해</h1>
+            <h1>항상 새로워집니다.</h1>
+        </div>
+        <div class="content4">
+            <h2>COOPERATION</h2>
+        </div>
+        <div class="content41">
+            <h1>열정을 바탕으로 뭉쳐 </h1>
+            <h1>동반자적 라이벌적</h1>
+            <h1>우정을 통하여</h1>
+            <h1>서로의 성장을 도모합니다.</h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="st2">
+            <br><br><br><br>
+            <h1>A</h1>
+            <h1>C</h1>
+            <h1>T</h1>
+            <h1>I</h1>
+            <h1>V</h1>
+            <h1>I</h1>
+            <h1>T</h1>
+            <h1>Y</h1>
+        </div>
+        <div class="de">
+            <div class="img51">
 
-            <div class ="ib3">
-                <a href ="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img src="instagram.PNG" alt="인스타그램"  width="15pt" height="15pt"></a>
+                <div class="content51">
+                    <h1>1</h1>
+                    <h1>이론</h1>
+                </div>
+            </div>
+            <div class="img52">
+                <div class="content52">
+                    <h1>2</h1>
+                    <h1>도전</h1>
+                </div>
             </div>
 
-            <div class="bi3t">
-                <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"><h1>Instagram</h1></a>
+            <div class="img53">
+                <div class="content53">
+                    <h1>3</h1>
+                    <h1>실전</h1>
+                </div>
+            </div>
+
+            <div class="img54">
+                <div class="content54">
+                    <h1>4</h1>
+                    <h1>기타</h1>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class ="bot4">
-        <div class ="join">
-            <h1>Join Now</h1>
+    <div class="last1">
+        <div class="st3">
+            <br><br><br><br>
+            <h1>C</h1>
+            <h1>O</h1>
+            <h1>N</h1>
+            <h1>T</h1>
+            <h1>A</h1>
+            <h1>C</h1>
+            <h1>T</h1>
         </div>
-
-        <div class="join1">
-            <img src="address.png" alt="주소창" width="250px" height="30px">
-
-            <div class="join2">
-                <a href ="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse" target ="_blank"><h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1></a>
+        <div class="last" style="width: 1000px">
+            <div>
+                <h5 id="intro1">인하벤처클럽과 함께 하고 싶은가요?</h5>
+                <h5 id="intro2">2020-2학기 신입부원 모집</h5>
             </div>
 
-            <div class="join3">
-                <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse target ="_blank" > <h1 style = color:black>OK</h1></a>
+            <div id="btn_group" style="text-align: center">
+                <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
+                    target="_blank"> <button id="test_btn1">지원하기</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <div class="bot1">
+            <h1>INHAVENTURECLUB</h1>
+        </div>
+        <div class="bot2">
+            <div id="top"><a href="">
+                    <h1>About US</h1>
+                </a></div>
+
+            <br>
+            <div id="center"><a href=".">
+                    <h1>Contact</h1>
+                </a></div><br>
+            <div id="bottom"><a href=".">
+                    <h1>Terms & Conditions</h1>
+                </a></div>
+        </div>
+
+        <div class="bot3">
+            <div class="bi1">
+                <div class="ib1">
+                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/facebook.PNG" alt="페이스북"
+                            width="15pt" height="15pt"></a>
+                </div>
+                <div class="bi1t">
+                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                        <h1>Facebook</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="bi2">
+                <div class="ib2">
+                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/twitter.PNG" alt="트위터"
+                            width="15pt" height="15pt"></a>
+                </div>
+                <div class="bi2t">
+                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                        <h1>Twitter</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="bi3">
+
+                <div class="ib3">
+                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img
+                            src="image/icon/instagram.PNG" alt="인스타그램" width="15pt" height="15pt"></a>
+                </div>
+
+                <div class="bi3t">
+                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank">
+                        <h1>Instagram</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot4">
+            <div class="join">
+                <h1>Join Now</h1>
+            </div>
+
+            <div class="join1">
+                <img src="image/icon/address.png" alt="주소창" width="250px" height="30px">
+
+                <div class="join2">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse"
+                        target="_blank">
+                        <h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1>
+                    </a>
+                </div>
+
+                <div class="join3">
+                    <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
+                        target="_blank">
+                        <h1 style=color:black>OK</h1>
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
+        <div class="bot5">
+            <h1>인천광역시 인하로 100,</h1>
+            <h1>인하대학교 5호관 서,북 접점</h1><br>
+            <h1>+82) 10-5239-9430</h1>
+            <h1>ash_dragon@inha.edu</h1>
+        </div>
     </div>
-
-    <div class ="bot5">
-        <h1>인천광역시 인하로 100,</h1>
-        <h1>인하대학교 5호관 서,북 접점</h1><br>
-        <h1>+82) 10-5239-9430</h1>
-        <h1>ash_dragon@inha.edu</h1>
-    </div>
-</div>
 
 </body>
 
