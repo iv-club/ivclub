@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>인하벤처클럽</title>
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+    <style>
+        body {
+            background-color: #2a2e3c;
+            min-width: 1500px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+
+        }
+
+        .up {
+            display: flex;
+            font-size: 7px;
+            margin-bottom: 10px;
+        }
+
+        .rink a:link {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:visited {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:active {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:hover {
+            text-decoration: none;
+            color: lightseagreen;
+        }
+
+        .up .up0 {
+            margin-right: 550px;
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+
+        .up .up1 {
+            margin-left: 180px;
+            margin-top: 5px;
+        }
+
+        .up .up2 {
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+
+        .up .up3 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+        .up .up4 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+        .up .up5 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+
+
+
+        .bot {
+            margin-top: 100px;
+            font-size: 5px;
+            display: flex;
+            width: 1500px;
+        }
+
+        .bot1 {
+            margin-left: 50px;
+            color: #fdfd23;
+        }
+
+        .bot2 {
+            margin-left: 200px;
+
+        }
+
+        .bot3 {
+            margin-left: 200px;
+
+        }
+
+        .bot4 {
+            margin-left: 200px;
+
+        }
+
+        .bot5 {
+            margin-left: 150px;
+
+        }
+
+        .bi1 {
+            display: flex;
+        }
+
+        .bi1 .bi1t {
+            margin-left: 20px;
+        }
+
+        .bi2 {
+            display: flex;
+        }
+
+        .bi2 .bi2t {
+            margin-left: 20px;
+        }
+
+        .bi3 {
+            display: flex;
+        }
+
+        .bi3 .bi3t {
+            margin-left: 20px;
+        }
+
+        .ib1 {
+            margin-top: 5px;
+        }
+
+        .ib2 {
+            margin-top: 5px;
+        }
+
+        .ib3 {
+            margin-top: 5px;
+        }
+
+        .join {
+            color: #fdfd23;
+        }
+
+        .join1 {
+            position: relative;
+            background-size: cover;
+        }
+
+        .join2 {
+            position: absolute;
+            top: 45%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+            font-size: 5px;
+            z-index: 2;
+
+        }
+
+        .join3 {
+            position: absolute;
+            top: 45%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            font-size: 5px;
+            z-index: 2;
+            color: black;
+        }
+
+        #challenge {
+            font-size: 15px;
+            color: #fdfd23;
+
+        }
+
+        #challenge3 {
+            font-size: 15px;
+            color: #fdfd23;
+
+        }
+
+        #challenge4 {
+            font-size: 15px;
+            color: #fdfd23;
+        }
+
+        #challenge5 {
+            font-size: 15px;
+            color: #fdfd23;
+        }
+
+        .challenge1 {
+            margin-top: 40px;
+            font-size: 12px;
+        }
+
+        .challenge2 {
+            font-size: 5px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .entire {
+            font-size: 10px;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .js {
+            margin-left: 20px;
+        }
+
+        .entire .start1 {
+            margin-left: 30px;
+        }
+
+        .entire .start {
+            position: fixed;
+            width: 6%;
+            margin-left: 22px;
+        }
+
+        .entire .challenge0 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-size: 5px;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: orange;
+        }
+
+        div.center img {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #startupImage {
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        button {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: none;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .tab_menu_container {
+            display: flex;
+        }
+
+        .tab_menu_btn {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: grey;
+            width: 200px;
+            height: 50px;
+            transition: 0.3s all;
+        }
+
+        .tab_menu_btn.on {
+            font-family: 'Noto Sans KR', sans-serif;
+            border-bottom: 2px solid seagreen;
+            font-weight: 700;
+            color: seagreen;
+        }
+
+        .tab_menu_btn:hover {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: seagreen;
+        }
+
+        .tab_box {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab_box.on {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="up" style="font-family: 'Noto Sans KR', sans-serif;">
+        <div class="up0">
+            <a href="index.html">
+                <h1>INHAVENTURECLUB</h1>
+            </a>
+        </div>
+        <div class="up1">
+            <a href="index.html">
+                <h1>HOME</h1>
+            </a>
+        </div>
+        <div class="up2">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>IVC</h1>
+            </a>
+        </div>
+        <div class="up3">
+            <a href="activity.html">
+                <h1>ACTIVITY</h1>
+            </a>
+        </div>
+        <div class="up4">
+            <a href="performance.html">
+                <h1>PERFORMANCE</h1>
+            </a>
+        </div>
+        <div class="up5">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>NEWS</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="entire">
+
+        <div class="start">
+
+            <div class="js">
+                <h1>PERFORMANCE</h1>
+            </div>
+            <div class="start1">
+                <br>
+                <a href="#challenge" style="font-size: 10px">
+                    <h1>창업</h1>
+                </a><br>
+
+                <a href="#challenge3" style="font-size: 10px">
+                    <h1>개발</h1>
+                </a><br>
+
+
+                <a href="#challenge4" style="font-size: 10px">
+                    <h1>공모전</h1>
+                </a><br>
+
+            </div>
+        </div>
+        <div style="width:80%;">
+            <div style="border-left:2px solid gray; margin-left: 175px">
+
+                <div class="challenge0" style="font-weight: bold">
+
+                    <div class="oh">
+                        <div id="challenge">
+                            <h1>창업</h1>
+                        </div>
+
+                        <div class="challenge2" style="font-size: 6px">
+                            <h1>인하벤처클럽 부원들의 창업 이력</h1>
+                        </div>
+                        <div class="challenge1">
+                            <div style="width:80%;">
+                                <div class="bi1">
+
+                                    <img src="image/activityImage/실전/창업/창업-1-아이펠리.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-2-aswemake.png" id="startupImage"
+                                        width="100px" height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-3-수거몬.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-4-스터디위드인하.png" id="startupImage"
+                                        width="100px" height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-5-프리즘.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-6-바트.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-7-리빈코.png" id="startupImage" width="100px"
+                                        height="100px">
+
+
+                                </div>
+
+                                <div class="bi1">
+
+                                    <img src="image/activityImage/실전/창업/창업-8-캠퍼스터디.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-9-한걸음산업.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-10-로보블럭.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-11-소프트엔터.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-12-아이지클럽.png" id="startupImage" width="100px"
+                                        height="100px">
+                                    <img src="image/activityImage/실전/창업/창업-13-에피프렌드.png" id="startupImage" width="100px"
+                                        height="100px">
+
+
+
+                                </div><br><br><br><br>
+                            </div>
+                        </div>
+
+                        <div id="challenge3">
+                            <h1>개발</h1>
+                        </div>
+
+                        <div class="challenge2" style="font-size: 6px">
+                            <h1>인하벤처클럽 부원들의 개발 이력</h1>
+                        </div>
+                        <div class="challenge1">
+                            <div style="width:80%;">
+                                <div class="bi1">
+
+                                    <img src="image/performanceImage/INCAR_LOGO.jpg" id="startupImage" width="100px"
+                                        height="100px">
+
+
+                                </div>
+
+                            </div>
+                        </div><br><br><br><br>
+
+                        <div id="challenge4">
+                            <h1>공모전</h1>
+                        </div>
+
+                        <div class="challenge2" style="font-size: 6px">
+                            <h1>인하벤처클럽 부원들의 공모전 이력</h1>
+                        </div>
+                        <div class="challenge1">
+                            <div style="width:80%;">
+
+
+
+
+                                <div class="tab_wrap">
+                                    <div class="tab_menu_container">
+                                        <button class="tab_menu_btn on" type="button">현재 - 2010</button>
+                                        <button class="tab_menu_btn" type="button">2010 - 2000</button>
+                                        <button class="tab_menu_btn" type="button">2000 - 1990</button>
+                                    </div> <!-- tab_menu_container e -->
+
+                                    <div class="tab_box_container">
+                                        <div class="tab_box on">
+                                            2020-1 교외 [UN SDSN] SDG Youth Hackathon 프로젝트 경진대회 SDSN Korea 대표상<br>
+                                            2020-1 교내 아랩 스타트업 아이디어 경진대회 대상, 금상, 동상<br>
+                                            2019-하계 교내 떴다 아이디어 공모전 대상, 장려상<br>
+                                            2019-1 교내 창업경진대회 아이데이션 대상, 최우수상<br>
+                                            2018-2 교내 창업경진대회 아이디어톤 우수상, 최우수상<br>
+                                            2018-1 교내 창업경진대회 아이데이션 최우수상<br>
+                                            2011년 제 2회 신한카드 아이디어 공모전 은상<br>
+                                            2010년 제 3회 신한카드 아이디어 공모전 장려상<br>
+                                        </div>
+                                        <div class="tab_box">
+
+                                            하나금융 제1회 SMART 하나 공모전 우수상<br>
+                                            JYP 아티스트 마케팅 공모전 우수상<br>
+                                            제5회 PSV 창업 경진대회 장려상 x2<br>
+                                            제4회 Descente Korea 아이디어 공모전 금상<br>
+                                            인천지역 동계 창업캠프 프레젠테이션 장려상<br>
+                                            제2회 롯데카드 대학생 아이디어 공모전 은상<br>
+                                            제2회 롯데면세점 대학생 아이디어 공모전 은상<br>
+                                            캠퍼스 산업융합 아이디어 공모전 은상<br>
+                                            창조관광 아이디어 공모전 최우수상<br>
+                                            Yes Leader 동아리 기업정신 공모전 장려상<br>
+                                            삼성 Yepp PR 마케팅 공모전 장려상<br>
+                                            인하대 창업 아이디어 경진대회 대상,우수상<br>
+                                            1기 LG 대학 벤쳐동아리 Idea Innovation Inonovation상<br>
+                                            제4회 PSV 창업 경진대회 최우수상,우수상<br>
+                                            삼성전자 대학생 마케팅 열전 대상<br>
+                                            중소기업청 창업 경진대회 장려상<br>
+                                            인하대학교 경영학부 창업경진대회 최우수상,우수상<br>
+                                            청소년 발명과학 아이디어 경진대회 동상<br>
+                                            예비기술창업자 육성 사업 선정<br>
+                                            교내 창업경진대회 우수상,장려상<br>
+                                            인하대학교 물류창업 공모전 수상<br>
+                                            중소기업청 정책제안 공모전 입상<br>
+                                            아모레퍼시픽 대학생 마케팅 공모전 입선<br>
+                                            제 1회 LG전자 모바일 프로젝터 마케팅 Idea공모전<br>
+                                            삼성 VLUU 대학생 마케팅열전 최우수상<br>
+                                            영남대 창업 아이디어 경진대회 우수상<br>
+                                            2009년 인하대 창업 아이디어 경진대회 우수상,장려상<br>
+                                            대학생 무역규제 경연대회 대상<br>
+                                            대학생 특허 정보 검색대회 특허정보원장상<br>
+
+
+                                            스타트업 썸머 아카데미 한국 창업 보육협회장상,최우수상<br>
+                                            건국 대학 발명경진대회 특허청장상,동상<br>
+                                            KT&G 아시아 창업 교류전 최우수상<br>
+                                            2008년 창업경진대회 한국 기술재단 이사장 3위<br>
+                                            인하대학교 1회 아이템 경진대회 최우수상,우수상<br>
+                                            2008년 LG Idea fair CVI그룹 1위<br>
+                                            청소년 발명과학 아이디어 경진대회 은상<br>
+                                            중소기업청 우수창업 아이템 지원사업 1,4위<br>
+                                            청소년 발명과학 아이디어 경진대회 중소기업청장상<br>
+                                            제5회 무역구제 경연대회 대상<br>
+                                            2008년 대학생 청업 아이디어 경진대회 2위<br>
+                                            2008년 인하대 창업 아이디어 경진대회 1,2,3위<br>
+                                            2008년 삼성전자 yepp캠퍼스 PR챌린지 대상<br>
+                                            인천 지방 중소기업청 창업경진대회 우수상<br>
+                                            삼성 Yepp P2 캠퍼스 PR페스티벌 우수상<br>
+                                            LG전자 DM사업부 주최 제 2최 Idea fair Innovation상<br>
+                                            2006년 중소기업청 지원 동아리 선정<br>
+                                            재정경제부 대학생 벤처창업 아이디어 공모전 수상<br>
+                                            베니건스 프로모션 협약 개시<br>
+                                            미추홍 창업경진대회 대상<br>
+                                            KOSEN 인천 주관 아이디어 공유전 수상<br>
+                                            아이디어 공유전 1위 수상<br>
+                                            여성 창업경진대회 예비창업자모델부문 대상<br>
+                                            2005년 중소기업청 지원동아리 선정<br>
+                                            데한민국 벤처 창업 대전 장려상<br>
+                                        </div>
+                                        <div class="tab_box">
+                                            중소기업청 창업아이템 개발비 지원 동아리 선정<br>
+                                            인하대학교 제4회 아이템 경진대회 우수상, 장려상<br>
+                                            제 2회 전국 대학생 창업경진대회 우수상<br>
+                                            중소기업청 시제품 개발비 지원사업 선정<br>
+                                            대한민국 학생발명전시회 장려상<br>
+                                            제2회 전국 대학생 창업경진대회 우수상<br>
+                                            중소기업청 우수 벤처동아리 선정<br>
+                                            제2회 아이템 경진대회 최우수상,우수상,장려상<br>
+                                            1997년 중소기업청 지원 우수 창업동아리 선정<br>
+                                            대한민국 학생발명 전시회 우수상<br>
+                                            제1회 대학생 창업경진대회 가작<br>
+                                            97년 대한민국 학생병명전시회 장려상<br>
+                                            제1회 창업아이템 경진대회 우수상<br>
+                                        </div>
+
+                                    </div> <!-- tab_box_container e -->
+                                </div> <!-- tab_wrap e -->
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="bot" style="font-family: 'Noto Sans KR', sans-serif;">
+                        <div class="bot1">
+                            <h1>INHAVENTURECLUB</h1>
+                        </div>
+                        <div class="bot2">
+                            <div id="top"><a href="">
+                                    <h1>About US</h1>
+                                </a></div>
+
+                            <br>
+                            <div id="center"><a href=".">
+                                    <h1>Contact</h1>
+                                </a></div><br>
+                            <div id="bottom"><a href=".">
+                                    <h1>Terms & Conditions</h1>
+                                </a></div>
+                        </div>
+
+                        <div class="bot3">
+                            <div class="bi1">
+                                <div class="ib1">
+                                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="facebook.PNG" alt="페이스북"
+                                            width="15pt" height="15pt"></a>
+                                </div>
+                                <div class="bi1t">
+                                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                        <h1>Facebook</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bi2">
+                                <div class="ib2">
+                                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="twitter.PNG" alt="트위터"
+                                            width="15pt" height="15pt"></a>
+                                </div>
+                                <div class="bi2t">
+                                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                        <h1>Twitter</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bi3">
+
+                                <div class="ib3">
+                                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img
+                                            src="instagram.PNG" alt="인스타그램" width="15pt" height="15pt"></a>
+                                </div>
+
+                                <div class="bi3t">
+                                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank">
+                                        <h1>Instagram</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bot4">
+                            <div class="join">
+                                <h1>Join Now</h1>
+                            </div>
+
+                            <div class="join1">
+                                <img src="address.png" alt="주소창" width="250px" height="30px">
+
+                                <div class="join2">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse"
+                                        target="_blank">
+                                        <h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1>
+                                    </a>
+                                </div>
+
+                                <div class="join3">
+                                    <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
+                                        target="_blank">
+                                        <h1 style=color:black>OK</h1>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="bot5">
+                            <h1>인천광역시 인하로 100,</h1>
+                            <h1>인하대학교 5호관 서,북 접점</h1><br>
+                            <h1>+82) 10-5239-9430</h1>
+                            <h1>ash_dragon@inha.edu</h1>
+                        </div>
+                    </div>
+                    <!-- <script src="js/activity.js"></script> -->
+                    <script type="text/javascript">
+                        $('.tab_menu_btn').on('click', function () {
+                            //버튼 색 제거,추가
+                            $('.tab_menu_btn').removeClass('on');
+                            $(this).addClass('on')
+
+                            //컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
+                            var idx = $('.tab_menu_btn').index(this);
+
+                            $('.tab_box').hide();
+                            $('.tab_box').eq(idx).show();
+                        });
+
+                    </script>
+</body>
+
+</html>
