@@ -5,17 +5,12 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>인하벤처클럽</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <!-- Not Working
-    <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-    --> 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
-    <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
-
     <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
     <style>
         body {
             background-color: #2a2e3c;
@@ -24,7 +19,13 @@
             color: white;
 
         }
-        
+
+        .up {
+            display: flex;
+            font-size: 7px;
+            margin-bottom: 10px;
+        }
+
         .rink a:link {
             text-decoration: none;
             color: gray;
@@ -45,36 +46,35 @@
             color: lightseagreen;
         }
 
-         .up {
-            display: flex;
-            font-size: 7px;
-            color: white;
-            margin-bottom: 10px;
-        }
-
         .up .up0 {
             margin-right: 550px;
-            margin-left: 30px;
+            margin-left: 40px;
+            margin-top: 5px;
         }
 
         .up .up1 {
-            margin-left: 160px;
+            margin-left: 180px;
+            margin-top: 5px;
         }
 
         .up .up2 {
+            margin-top: 5px;
             margin-left: 100px;
         }
 
         .up .up3 {
             margin-left: 100px;
+            margin-top: 5px;
         }
 
         .up .up4 {
             margin-left: 100px;
+            margin-top: 5px;
         }
 
         .up .up5 {
             margin-left: 100px;
+            margin-top: 5px;
         }
 
 
@@ -218,13 +218,18 @@
             margin-top: 30px;
         }
 
+        .js {
+            margin-left: 20px;
+        }
+
+        .entire .start1 {
+            margin-left: 30px;
+        }
+
         .entire .start {
             position: fixed;
-            width: 30%;
-            margin-left: 40px;
-        }
-        .side{
-            margin-left: 10px;
+            width: 6%;
+            margin-left: 22px;
         }
 
         .entire .challenge0 {
@@ -271,562 +276,539 @@
 </head>
 
 <body>
-<div class="up" style="font-family: 'Noto Sans KR', sans-serif;">
-    <div class="up0">
-        <a href="index.html">
-            <h1>INHAVENTURECLUB</h1>
-        </a>
-    </div>
-    <div class="up1">
-        <a href="index.html">
-            <h1>HOME</h1>
-        </a>
-    </div>
-    <div class="up2">
-        <a href="javascript:alert('곧 업데이트 예정입니다.');">
-            <h1>IVC</h1>
-        </a>
-    </div>
-    <div class="up3">
-        <a href="activity.html">
-            <h1>ACTIVITY</h1>
-        </a>
-    </div>
-    <div class="up4">
-        <a href="javascript:alert('곧 업데이트 예정입니다.');">
-            <h1>PERFORMANCE</h1>
-        </a>
-    </div>
-    <div class="up5">
-        <a href="news.html">
-            <h1>NEWS</h1>
-        </a>
-    </div>
-</div>
-
-<div class="entire">
-
-    <div class="start">
-
-        <div class="js" style="font-size: 10px">
-
-            <h1>ACTIVITY</h1>
-            <br>
-            <div class ='side'>
-            <a href="#challenge" style="font-size: 10px">
-                <h1>1. 이론</h1>
-            </a><br>
-
-
-            <a href="#challenge3" style="font-size: 10px">
-                <h1>2. 도전</h1>
-            </a><br>
-
-            <a href="#challenge4" style="font-size: 10px">
-                <h1>3. 실전</h1>
-            </a><br>
-
-
-            <a href="#challenge5" style="font-size: 10px">
-                <h1>4. 기타</h1>
+    <div class="up" style="font-family: 'Noto Sans KR', sans-serif;">
+        <div class="up0">
+            <a href="index.html">
+                <h1>INHAVENTURECLUB</h1>
             </a>
-            </div>
+        </div>
+        <div class="up1">
+            <a href="index.html">
+                <h1>HOME</h1>
+            </a>
+        </div>
+        <div class="up2">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>IVC</h1>
+            </a>
+        </div>
+        <div class="up3">
+            <a href="activity.html">
+                <h1>ACTIVITY</h1>
+            </a>
+        </div>
+        <div class="up4">
+            <a href="performance.html">
+                <h1>PERFORMANCE</h1>
+            </a>
+        </div>
+        <div class="up5">
+            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                <h1>NEWS</h1>
+            </a>
         </div>
     </div>
-    <div style="width : 80%;">
-        <div style="border-left:2px solid gray; margin-left: 175px">
 
-            <div class="challenge0" style="font-weight: bold">
+    <div class="entire">
 
-                <div class="oh">
-                    <div id="challenge">
-                        <h1>이론적 활동</h1>
-                    </div>
+        <div class="start">
 
-                    <div class="challenge2" style="font-size: 6px">
-                        <h1>창업에 필요한 여러 기술과 능력을 이론 중심으로 학습하는 활동</h1>
-                    </div>
-                    <div style="width:80%;">
-                        <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
-                            <div class="challenge1">
-                                <h1>교육</h1>
-                            </div>
-                            <div class="challenge2" style="font-size: 6px">
-                                <h1>창업 기술 학습</h1>
-                            </div>
+            <div class="js">
+                <h1>ACTIVITY</h1>
+            </div>
+            <div class="start1">
+                <br>
+                <a href="#challenge" style="font-size: 10px">
+                    <h1>1. 이론</h1>
+                </a><br>
+
+                <a href="#challenge3" style="font-size: 10px">
+                    <h1>2. 도전</h1>
+                </a><br>
+
+
+                <a href="#challenge4" style="font-size: 10px">
+                    <h1>3. 실전</h1>
+                </a><br>
+
+
+                <a href="#challenge5" style="font-size: 10px">
+                    <h1>4. 기타</h1>
+                </a>
+            </div>
+        </div>
+        <div style="width:80%;">
+            <div style="border-left:2px solid gray; margin-left: 175px">
+
+                <div class="challenge0" style="font-weight: bold">
+
+                    <div class="oh">
+                        <div id="challenge">
+                            <h1>이론적 활동</h1>
                         </div>
 
-                        <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                             class="center">
-                            <img src="image/activityImage/이론/교육/교육1.png">
-                            <img src="image/activityImage/이론/교육/교육2.png">
-                            <img src="image/activityImage/이론/교육/교육3.png">
-                            <img src="image/activityImage/이론/교육/교육4.png">
-                          
-
+                        <div class="challenge2" style="font-size: 6px">
+                            <h1>창업에 필요한 여러 기술과 능력을 이론 중심으로 학습하는 활동</h1>
                         </div>
-
-                        <p style="margin-top: 20px">
-                            창업에 필요한 다양한 교육을 제공합니다. 깊이있는 교육보단 핵심 기능만을
-                            가르쳐 최단시간 현장에서 사용할 수 있도록 하는 실무 중심 교육을
-                            지향합니다.
-                        </p>
-                        <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
-
-                            <div class="challenge1">
-                                <br>
-                                <h1>강연</h1>
+                        <div style="width:80%;">
+                            <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
+                                <div class="challenge1">
+                                    <h1>교육</h1>
+                                </div>
+                                <div class="challenge2" style="font-size: 6px">
+                                    <h1>창업 기술 학습</h1>
+                                </div>
                             </div>
-                            <div class="challenge2" style="font-size: 6px">
-                                <div style="width:80%;">
-                                    <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
-                                        <h1>생생한 창업 이야기</h1>
+
+                            <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                class="center">
+                                <img src="image/activityImage/이론/교육/교육1.png">
+                                <img src="image/activityImage/이론/교육/교육2.png">
+                                <img src="image/activityImage/이론/교육/교육3.png">
+                                <img src="image/activityImage/이론/교육/교육4.png">
+                                <img src="image/activityImage/이론/교육/교육1.png">
+
+                            </div>
+
+                            <p style="margin-top: 20px">
+                                창업에 필요한 다양한 교육을 제공합니다. 깊이있는 교육보단 핵심 기능만을
+                                가르쳐 최단시간 현장에서 사용할 수 있도록 하는 실무 중심 교육을
+                                지향합니다.
+                            </p>
+                            <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
+
+                                <div class="challenge1">
+                                    <br>
+                                    <h1>강연</h1>
+                                </div>
+                                <div class="challenge2" style="font-size: 6px">
+                                    <div style="width:80%;">
+                                        <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
+                                            <h1>생생한 창업 이야기</h1>
+                                        </div>
+                                    </div>
+                                    <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                        class="center">
+                                        <img src="image/activityImage/이론/강연/강연1.png">
+                                        <img src="image/activityImage/이론/강연/강연1.png">
+                                        <img src="image/activityImage/이론/강연/강연1.png">
+                                        <img src="image/activityImage/이론/강연/강연1.png">
+
+                                        <!--                        여기에 강연 사진 3개더 추가-->
                                     </div>
                                 </div>
-                                <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                     class="center">
-                                    <img src="image/activityImage/이론/강연/강연1.png">
-                                    <img src="image/activityImage/이론/강연/강연2.jpg">
-                                    <img src="image/activityImage/이론/강연/강연3.jpg">
-                                    <img src="image/activityImage/이론/강연/강연3.jpg">
-                          
-                                    <!--                        여기에 강연 사진 3개더 추가-->
-                         
-                            </div>
-                            <p style="margin-top: 20px">
+                                <p style="margin-top: 20px">
 
-                                실제 창업자를 초청하여 다양한 주제의 강연을 진행합니다.
-                            </p>
+                                    실제 창업자를 초청하여 다양한 주제의 강연을 진행합니다.
+                                </p>
 
-                            <div class="hi" style="margin-top: 30px;">
-                                <div id="challenge3">
-                                    <br>
-                                    <h1>도전적 활동</h1>
-                                </div>
+                                <div class="hi" style="margin-top: 30px;">
+                                    <div id="challenge3">
+                                        <br>
+                                        <h1>도전적 활동</h1>
+                                    </div>
 
-                                <div class="challenge2" style="font-size: 6px">
-                                    <h1>알고있는 것을 바탕으로 경험을 쌓고 문제 해결에 도전하는 활동</h1>
-                                </div>
-                                <div style="width:80%;">
-                                    <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
-                                        <div class="challenge1">
-                                            <br>
-                                            <h1>10만원 프로젝트</h1>
+                                    <div class="challenge2" style="font-size: 6px">
+                                        <h1>알고있는 것을 바탕으로 경험을 쌓고 문제 해결에 도전하는 활동</h1>
+                                    </div>
+                                    <div style="width:80%;">
+                                        <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
+                                            <div class="challenge1">
+                                                <br>
+                                                <h1>10만원 프로젝트</h1>
+                                            </div>
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <h1>초기자본 10만원으로 최대 수익을 창출하는 경쟁형 프로젝트</h1>
+                                            </div>
+                                        </div>
+
+                                        <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                            class="center">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원1.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원2.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원3.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원4.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원5.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원6.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원7.png">
+                                            <img src="image/activityImage/도전/10만원프로젝트/10만원8.png">
+
+
                                         </div>
                                         <div class="challenge2" style="font-size: 6px">
-                                            <h1>초기자본 10만원으로 최대 수익을 창출하는 경쟁형 프로젝트</h1>
+                                            <h1>초기자본 10만원으로 최대 수익을 창출하는 경쟁형 프로젝트입니다. 아이디어창출, 기획, 운영, 수익창출등창업에 관한 전반적인
+                                                과정을 경험할 수 있는 활동입니다.
+                                                지난 10만원프로젝트의 경우 축제 지도 만들기, 100대 100 미팅, 인벤상사, 추파를 던져라, 스피드데이팅, 인디바 등 다양한
+                                                아이디어로 실제 수익을 창출했습니다.
+                                                활동을통한 수익의 일부를 학교에 기부하고있습니다.</h1><br>
                                         </div>
-                                    </div>
-
-                                    <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                         class="center">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원1.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원2.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원3.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원4.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원5.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원6.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원7.png">
-                                        <img src="image/activityImage/도전/10만원프로젝트/10만원8.png">
-
-
-                                    </div>
-                                    <div class="challenge2" style="font-size: 6px">
-                                        <h1>초기자본 10만원으로 최대 수익을 창출하는 경쟁형 프로젝트입니다. 아이디어창출, 기획, 운영, 수익창출등창업에 관한 전반적인
-                                            과정을 경험할 수 있는 활동입니다.
-                                            지난 10만원프로젝트의 경우 축제 지도 만들기, 100대 100 미팅, 인벤상사, 추파를 던져라, 스피드데이팅, 인디바 등 다양한
-                                            아이디어로 실제 수익을 창출했습니다.
-                                            활동을통한 수익의 일부를 학교에 기부하고있습니다.</h1><br>
-                                    </div>
-                                    <div class="challenge2" style="font-size: 6px">
-                                        <h1>관련링크</h1>
-                                        <div class="rink">
-                                            <a href="https://news.mt.co.kr/mtview.php?no=2012051610092228936">인하벤처클럽,
-                                                축제시즌 100대 100 미팅 후원</a><br>
+                                        <div class="challenge2" style="font-size: 6px">
+                                            <h1>관련링크</h1>
+                                            <div class="rink">
+                                                <a href="https://news.mt.co.kr/mtview.php?no=2012051610092228936">인하벤처클럽,
+                                                    축제시즌 100대 100 미팅 후원</a><br>
+                                            </div>
                                         </div>
+                                        <div class="challenge1">
+                                            <br>
+                                            <h1>공모전</h1>
+                                        </div>
+                                        <div class="challenge2" style="font-size: 6px">
+                                            <div style="width:80%;">
+                                                <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
+                                                    <h1>교내의 공모전에 도전하는 성과형 프로젝트</h1>
+                                                </div>
+                                            </div>
+                                            <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                                class="center">
+                                                <img src="image/activityImage/도전/공모전/공모전1.png">
+                                                <img src="image/activityImage/도전/공모전/공모전2.png">
+                                                <img src="image/activityImage/도전/공모전/공모전3.png">
+                                                <img src="image/activityImage/도전/공모전/공모전4.png">
+                                                <img src="image/activityImage/도전/공모전/공모전5.png">
+                                                <img src="image/activityImage/도전/공모전/공모전6.png">
+                                                <img src="image/activityImage/도전/공모전/대상팀 인터뷰.png">
+                                                <img src="image/activityImage/도전/공모전/금상팀 인터뷰.png">
+                                                <img src="image/activityImage/도전/공모전/동상팀 인터뷰.png">
+
+
+
+                                            </div>
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <h1>1학기에는 10 Talent 진행에만 집중하고 하계 방학기간부터 2학기의 주요 활동은 팀 별 공모전 진행입니다.
+                                                    각자의 개성이 넘치는 회원들끼리 팀을 이루어 서로의 공모전 아이디어를 발표하고 피드백 받으며 서로에게 시너지 효과를 줄 수
+                                                    있습니다</h1><br>
+                                            </div>
+
+                                            <div class="challenge2" style="margin-top: 20px; font-size: 6px">
+                                                <h1>관련링크</h1>
+                                            </div>
+                                            <div class="rink">
+                                                <a
+                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODg3JTJGYXJ0Y2xWaWV3LmRvJTNG">2020
+                                                    아랩 스타트업 아이디어 경진대회 대상팀 인터뷰</a><br>
+                                                <a
+                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODg4JTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc">2020
+                                                    아랩 스타트업 아이디어 경진대회 금상팀 인터뷰</a><br>
+                                                <a
+                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODkwJTJGYXJ0Y2xWaWV3LmRvJTNG">2020
+                                                    아랩 스타트업 아이디어 경진대회 동상팀 인터뷰</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div id="challenge4">
+                                        <br><br><br><br>
+                                        <h1>실전적 활동</h1>
+                                    </div>
+
+                                    <div class="challenge2" style="font-size: 6px">
+                                        <h1>실전 상황에 부딪혀보며 경험해보는 활동</h1>
                                     </div>
                                     <div class="challenge1">
-                                        <br>
-                                        <h1>공모전</h1>
-                                    </div>
-                                    <div class="challenge2" style="font-size: 6px">
                                         <div style="width:80%;">
-                                            <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
-                                                <h1>교내의 공모전에 도전하는 성과형 프로젝트</h1>
-                                            </div>
-                                        </div>
-                                        <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                             class="center">
-                                            <img src="image/activityImage/도전/공모전/공모전1.png">
-                                            <img src="image/activityImage/도전/공모전/공모전2.png">
-                                            <img src="image/activityImage/도전/공모전/공모전3.png">
-                                            <img src="image/activityImage/도전/공모전/공모전4.png">
-                                            <img src="image/activityImage/도전/공모전/공모전5.png">
-                                            <img src="image/activityImage/도전/공모전/공모전6.png">
-                                     
-
-
-
-                                        </div>
-                                        <div class="challenge2" style="font-size: 6px">
-                                            <h1>1학기에는 10 Talent 진행에만 집중하고 하계 방학기간부터 2학기의 주요 활동은 팀 별 공모전 진행입니다.
-                                                각자의 개성이 넘치는 회원들끼리 팀을 이루어 서로의 공모전 아이디어를 발표하고 피드백 받으며 서로에게 시너지 효과를 줄 수
-                                                있습니다</h1><br>
-                                        </div>
-
-                                        <div class="challenge2" style="margin-top: 20px; font-size: 6px">
-                                            <h1>관련링크</h1>
-                                        </div>
-                                        <div class="rink">
-                                            <a
-                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODg3JTJGYXJ0Y2xWaWV3LmRvJTNG">2020
-                                                아랩 스타트업 아이디어 경진대회 대상팀 인터뷰</a><br>
-                                            <a
-                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODg4JTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc">2020
-                                                아랩 스타트업 아이디어 경진대회 금상팀 인터뷰</a><br>
-                                            <a
-                                                    href="https://www.inha.ac.kr/kr/1541/subview.do?&enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkY1OCUyRjIyODkwJTJGYXJ0Y2xWaWV3LmRvJTNG">2020
-                                                아랩 스타트업 아이디어 경진대회 동상팀 인터뷰</a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div id="challenge4">
-                                    <br><br><br><br>
-                                    <h1>실전적 활동</h1>
-                                </div>
-
-                                <div class="challenge2" style="font-size: 6px">
-                                    <h1>실전 상황에 부딪혀보며 경험해보는 활동</h1>
-                                </div>
-                                <div class="challenge1">
-                                    <div style="width:80%;">
-                                        <div
+                                            <div
                                                 style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
 
-                                            <br>
-                                            <h1> 창업</h1>
-                                            <h1 style="font-size:12px;">수익 창출 활동</h1>
-                                        </div>
-                                        <div class="challenge2" style="font-size: 6px">
+                                                <br>
+                                                <h1> 창업</h1>
+                                                <h1 style="font-size:12px;">수익 창출 활동</h1>
+                                            </div>
+                                            <div class="challenge2" style="font-size: 6px">
 
-                                            <h1>인하벤처클럽에서는 매년 팀원들의 실전 창업 도전이 이루어지고 있습니다.</h1>
-                                            <h1>다양한 경험과 갖가지 역량을 갖춘 팀원들끼리 모여 아이디어를 구성해 창업에 도전해볼 수 있습니다.</h1>
-                                        </div>
-                                        <div class="bi1">
+                                                <h1>인하벤처클럽에서는 매년 팀원들의 실전 창업 도전이 이루어지고 있습니다.</h1>
+                                                <h1>다양한 경험과 갖가지 역량을 갖춘 팀원들끼리 모여 아이디어를 구성해 창업에 도전해볼 수 있습니다.</h1><br>
+                                            </div>
 
-                                            <img src="image/activityImage/실전/창업/창업-1-아이펠리.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-2-aswemake.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-3-수거몬.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-4-스터디위드인하.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-5-프리즘.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-6-바트.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-7-리빈코.png" id="startupImage"
-                                                 width="100px" height="100px">
-
-
-                                        </div>
-
-                                        <div class="bi1">
-
-                                            <img src="image/activityImage/실전/창업/창업-8-캠퍼스터디.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-9-한걸음산업.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-10-로보블럭.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-11-소프트엔터.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-12-아이지클럽.png" id="startupImage"
-                                                 width="100px" height="100px">
-                                            <img src="image/activityImage/실전/창업/창업-13-에피프렌드.png" id="startupImage"
-                                                 width="100px" height="100px">
-
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="challenge5">
-                                    <br><br><br><br><br>
-                                    <h1>기타</h1>
-                                </div>
-
-                                <div class="challenge2" style="font-size: 6px">
-                                    <h1>기타 활동에 대한 설명</h1>
-                                </div>
-                                <div style="width:80%;">
-                                    <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
-                                        <div class="challenge1">
-                                            <h1>친목활동</h1>
-                                        </div>
-                                        <div class="challenge2" style="font-size: 6px">
-                                            <h1>동아리 부원간 친밀감을 높이고 결속력을 다지기 위한 MT, 뒤풀이</h1>
+                                            <div class="challenge2" style="margin-top: 20px; font-size: 6px">
+                                                <h1>관련링크</h1>
+                                            </div>
+                                            <div class="rink">
+                                                <a
+                                                    href="performance.html">2020
+                                                    창업 실적 더보기</a><br>
+                                                
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                         class="center">
-                                        <img src="image/activityImage/기타/친목/친목활동1.png">
-                                        <img src="image/activityImage/기타/친목/친목활동2.png">
-                                        <img src="image/activityImage/기타/친목/친목활동3.png">
-                                        <img src="image/activityImage/기타/친목/친목활동4.png">
-                                        <img src="image/activityImage/기타/친목/친목활동5.png">
-                                        <img src="image/activityImage/기타/친목/친목활동6.png">
-                                        <img src="image/activityImage/기타/친목/친목활동7.png">
-                                        <img src="image/activityImage/기타/친목/친목활동8.png">
-                                        <img src="image/activityImage/기타/친목/친목활동9.png">
-                                        <img src="image/activityImage/기타/친목/친목활동10.png">
-                                        <img src="image/activityImage/기타/친목/친목활동11.png">
-                                       
-
-
-
+                                    <div id="challenge5">
+                                        <br><br><br><br><br>
+                                        <h1>기타</h1>
                                     </div>
 
-                                    <p style="margin-top: 20px">
-                                        인하벤처클럽에서는 매년 팀원들의 실전 창업 도전이 이루어지고 있습니다.<br>
-
-                                        다양한 경험과 갖가지 역량을 갖춘 팀원들끼리 모여 아이디어를 구성해 창업에 도전해볼 수 있습니다.
-                                    </p>
-                                    <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
-
-                                        <div class="challenge1">
-                                            <br>
-                                            <h1>OB-YB 네트워킹</h1>
+                                    <div class="challenge2" style="font-size: 6px">
+                                        <h1>기타 활동에 대한 설명</h1>
+                                    </div>
+                                    <div style="width:80%;">
+                                        <div style="border-bottom:2px solid #fdfd23; margin-top: 30px; width: 1200px">
+                                            <div class="challenge1">
+                                                <h1>친목활동</h1>
+                                            </div>
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <h1>동아리 부원간 친밀감을 높이고 결속력을 다지기 위한 MT, 뒤풀이</h1>
+                                            </div>
                                         </div>
-                                        <div class="challenge2" style="font-size: 6px">
-                                            <div style="width:80%;">
-                                                <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
-                                                    <h1>OB-YB 네트워킹 설명</h1>
+
+                                        <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                            class="center">
+                                            <img src="image/activityImage/기타/친목/친목활동1.png">
+                                            <img src="image/activityImage/기타/친목/친목활동2.png">
+                                            <img src="image/activityImage/기타/친목/친목활동3.png">
+                                            <img src="image/activityImage/기타/친목/친목활동4.png">
+                                            <img src="image/activityImage/기타/친목/친목활동5.png">
+                                            <img src="image/activityImage/기타/친목/친목활동6.png">
+                                            <img src="image/activityImage/기타/친목/친목활동7.png">
+                                            <img src="image/activityImage/기타/친목/친목활동8.png">
+                                            <img src="image/activityImage/기타/친목/친목활동9.png">
+                                            <img src="image/activityImage/기타/친목/친목활동10.png">
+                                            <img src="image/activityImage/기타/친목/친목활동11.png">
+                                            <img src="image/activityImage/기타/친목/친목활동12.jpg">
+                                            <img src="image/activityImage/기타/친목/친목활동13.jpg">
+                                            <img src="image/activityImage/기타/친목/친목활동14.jpg">
+                                            <img src="image/activityImage/기타/친목/친목활동15.jpg">
+                                            <img src="image/activityImage/기타/친목/친목활동16.jpg">
+
+
+
+
+                                        </div>
+
+                                        <p style="margin-top: 20px">
+                                            인하벤처클럽에서는 매년 팀원들의 실전 창업 도전이 이루어지고 있습니다.<br>
+
+                                            다양한 경험과 갖가지 역량을 갖춘 팀원들끼리 모여 아이디어를 구성해 창업에 도전해볼 수 있습니다.
+                                        </p>
+                                        <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
+
+                                            <div class="challenge1">
+                                                <br>
+                                                <h1>OB-YB 네트워킹</h1>
+                                            </div>
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <div style="width:80%;">
+                                                    <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
+                                                        <h1>OB-YB 네트워킹 설명</h1>
+                                                    </div>
+                                                </div>
+                                                <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                                    class="center">
+                                                    <img src="image/activityImage/기타/OB-YB/OB1.png">
+                                                    <img src="image/activityImage/기타/OB-YB/OB2.png">
+                                                    <img src="image/activityImage/기타/OB-YB/체육대회1.jpg">
+                                                    <img src="image/activityImage/기타/OB-YB/OB1.png">
+                                                    <img src="image/activityImage/기타/OB-YB/OB2.png">
+                                                    <img src="image/activityImage/기타/OB-YB/체육대회1.jpg">
+
+
+                                                    <!--                        여기에 강연 사진 3개더 추가-->
                                                 </div>
                                             </div>
-                                            <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                                 class="center">
-                                                <img src="image/activityImage/기타/OB-YB/OB1.png">
-                                                <img src="image/activityImage/기타/OB-YB/OB2.png">
-                                                <img src="image/activityImage/기타/OB-YB/체육대회1.jpg">
-                                                <img src="image/activityImage/기타/OB-YB/OB1.png">
-                                                <img src="image/activityImage/기타/OB-YB/OB2.png">
-                                                <img src="image/activityImage/기타/OB-YB/체육대회1.jpg">
+                                            <p style="margin-top: 20px">
 
+                                                1학기 창립제, 2학기 체육대회를 통해 OB분들과 만나 다양한 이야기를 해볼 수 있는 장을 제공합니다.
+                                            </p>
+                                        </div>
 
-                                                <!--                        여기에 강연 사진 3개더 추가-->
+                                        <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
+
+                                            <div class="challenge1">
+                                                <br>
+                                                <h1>소모임</h1>
                                             </div>
-                                        </div>
-                                        <p style="margin-top: 20px">
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <div style="width:80%;">
+                                                    <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
+                                                        <h1>활동 내용이나 목적에 제한 없이 부원들에 의해 자발적으로 만들어진 소모임 활동</h1>
+                                                    </div>
+                                                </div>
+                                                <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                                    class="center">
+                                                    <img src="image/activityImage/기타/소모임/소모임1.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임2.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임3.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임4.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임5.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임6.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임7.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임8.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임9.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임10.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임11.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임12.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임13.png">
+                                                    <img src="image/activityImage/기타/소모임/소모임14.png">
+                                                  
 
-                                            1학기 창립제, 2학기 체육대회를 통해 OB분들과 만나 다양한 이야기를 해볼 수 있는 장을 제공합니다.
-                                        </p>
-                                    </div>
-
-                                    <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
-
-                                        <div class="challenge1">
-                                            <br>
-                                            <h1>소모임</h1>
-                                        </div>
-                                        <div class="challenge2" style="font-size: 6px">
-                                            <div style="width:80%;">
-                                                <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
-                                                    <h1>활동 내용이나 목적에 제한 없이 부원들에 의해 자발적으로 만들어진 소모임 활동</h1>
+                                                    <!--                        여기에 강연 사진 3개더 추가-->
                                                 </div>
                                             </div>
-                                            <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                                 class="center">
-                                                <img src="image/activityImage/기타/소모임/소모임1.png">
-                                                <img src="image/activityImage/기타/소모임/소모임2.png">
-                                                <img src="image/activityImage/기타/소모임/소모임3.png">
-                                                <img src="image/activityImage/기타/소모임/소모임4.png">
-                                                <img src="image/activityImage/기타/소모임/소모임5.png">
-                                                <img src="image/activityImage/기타/소모임/소모임6.png">
-                                                <img src="image/activityImage/기타/소모임/소모임7.png">
-                                                <img src="image/activityImage/기타/소모임/소모임8.png">
-                                                <img src="image/activityImage/기타/소모임/소모임9.png">
-                                                <img src="image/activityImage/기타/소모임/소모임10.png">
-                                                <img src="image/activityImage/기타/소모임/소모임11.png">
-                                                <img src="image/activityImage/기타/소모임/소모임12.png">
-                                                <img src="image/activityImage/기타/소모임/소모임13.png">
-                                                <img src="image/activityImage/기타/소모임/소모임14.png">
+                                            <p style="margin-top: 20px">
 
+                                                산업에 관해 분석하는 활동부터 인터뷰를 통해 잡지를 만들거나 어플을 개발하는 등 다양한 소모임활동이 활발하게 운영되고 있습니다.
+                                            </p>
+                                        </div>
 
-                                                <!--                        여기에 강연 사진 3개더 추가-->
+                                        <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
+
+                                            <div class="challenge1">
+                                                <br>
+                                                <h1>외부활동</h1>
                                             </div>
-                                        </div>
-                                        <p style="margin-top: 20px">
+                                            <div class="challenge2" style="font-size: 6px">
+                                                <div style="width:80%;">
+                                                    <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
+                                                        <h1>외부활동</h1>
+                                                    </div>
+                                                </div>
+                                                <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
+                                                    class="center">
+                                                    <img src="image/activityImage/기타/외부활동/외부행사1.png">
+                                                    <img src="image/activityImage/기타/외부활동/외부행사2.png">
+                                                    <img src="image/activityImage/기타/외부활동/외부행사1.png">
+                                                    <img src="image/activityImage/기타/외부활동/외부행사2.png">
 
-                                            산업에 관해 분석하는 활동부터 인터뷰를 통해 잡지를 만들거나 어플을 개발하는 등 다양한 소모임활동이 활발하게 운영되고 있습니다.
-                                        </p>
-                                    </div>
 
-                                    <div class="challenge2" style="margin-top: 20px" style="font-size: 6px">
-
-                                        <div class="challenge1">
-                                            <br>
-                                            <h1>외부활동</h1>
-                                        </div>
-                                        <div class="challenge2" style="font-size: 6px">
-                                            <div style="width:80%;">
-                                                <div style="border-bottom:2px solid #fdfd23; width: 1200px;">
-                                                    <h1>외부활동</h1>
+                                                    <!--                        여기에 강연 사진 3개더 추가-->
                                                 </div>
                                             </div>
-                                            <div style=" width:1000px; height: 100%; background-color: #2a2e3c; margin:100px"
-                                                 class="center">
-                                                <img src="image/activityImage/기타/외부활동/외부행사1.png">
-                                                <img src="image/activityImage/기타/외부활동/외부행사2.png">
-                                                <img src="image/activityImage/기타/외부활동/외부행사1.png">
-                                                <img src="image/activityImage/기타/외부활동/외부행사2.png">
+                                            <p style="margin-top: 20px">
 
-
-                                                <!--                        여기에 강연 사진 3개더 추가-->
-                                            </div>
+                                                다양한 아이디어를 얻기 위해 데모데이와 같은 창업 관련 행사에 합니다. 또한 산업에 관한 다양한 정보를 얻기 위해 여러 종류의 전시회나 박람회에 함께 참여하기도 합니다.
+                                            </p>
                                         </div>
-                                        <p style="margin-top: 20px">
 
-                                            다양한 아이디어를 얻기 위해 데모데이와 같은 창업 관련 행사에 합니다. 또한 산업에 관한 다양한 정보를 얻기 위해 여러 종류의 전시회나 박람회에 함께 참여하기도 합니다.
-                                        </p>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-            </div>
-            <div class="bot">
-        <div class="bot1">
-            <h1>INHAVENTURECLUB</h1>
-        </div>
-        <div class="bot2">
-            <div id="top"><a href="">
-                    <h1>About US</h1>
-                </a></div>
 
-            <br>
-            <div id="center"><a href=".">
-                    <h1>Contact</h1>
-                </a></div><br>
-            <div id="bottom"><a href=".">
-                    <h1>Terms & Conditions</h1>
-                </a></div>
-        </div>
+                <div class="bot" style="font-family: 'Noto Sans KR', sans-serif;">
+                    <div class="bot1">
+                        <h1>INHAVENTURECLUB</h1>
+                    </div>
+                    <div class="bot2">
+                        <div id="top"><a href="">
+                                <h1>About US</h1>
+                            </a></div>
 
-        <div class="bot3">
-            <div class="bi1">
-                <div class="ib1">
-                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/facebook.PNG" alt="페이스북"
-                            width="15pt" height="15pt"></a>
+                        <br>
+                        <div id="center"><a href=".">
+                                <h1>Contact</h1>
+                            </a></div><br>
+                        <div id="bottom"><a href=".">
+                                <h1>Terms & Conditions</h1>
+                            </a></div>
+                    </div>
+
+                    <div class="bot3">
+                        <div class="bi1">
+                            <div class="ib1">
+                                <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="facebook.PNG" alt="페이스북"
+                                        width="15pt" height="15pt"></a>
+                            </div>
+                            <div class="bi1t">
+                                <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                    <h1>Facebook</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bi2">
+                            <div class="ib2">
+                                <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="twitter.PNG" alt="트위터"
+                                        width="15pt" height="15pt"></a>
+                            </div>
+                            <div class="bi2t">
+                                <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                    <h1>Twitter</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bi3">
+
+                            <div class="ib3">
+                                <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img
+                                        src="instagram.PNG" alt="인스타그램" width="15pt" height="15pt"></a>
+                            </div>
+
+                            <div class="bi3t">
+                                <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank">
+                                    <h1>Instagram</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bot4">
+                        <div class="join">
+                            <h1>Join Now</h1>
+                        </div>
+
+                        <div class="join1">
+                            <img src="address.png" alt="주소창" width="250px" height="30px">
+
+                            <div class="join2">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse"
+                                    target="_blank">
+                                    <h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1>
+                                </a>
+                            </div>
+
+                            <div class="join3">
+                                <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
+                                    target="_blank">
+                                    <h1 style=color:black>OK</h1>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bot5">
+                        <h1>인천광역시 인하로 100,</h1>
+                        <h1>인하대학교 5호관 서,북 접점</h1><br>
+                        <h1>+82) 10-5239-9430</h1>
+                        <h1>ash_dragon@inha.edu</h1>
+                    </div>
                 </div>
-                <div class="bi1t">
-                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
-                        <h1>Facebook</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="bi2">
-                <div class="ib2">
-                    <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/twitter.PNG" alt="트위터"
-                            width="15pt" height="15pt"></a>
-                </div>
-                <div class="bi2t">
-                    <a href="javascript:alert('곧 업데이트 예정입니다.');">
-                        <h1>Twitter</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="bi3">
-
-                <div class="ib3">
-                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img
-                            src="image/icon/instagram.PNG" alt="인스타그램" width="15pt" height="15pt"></a>
-                </div>
-
-                <div class="bi3t">
-                    <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank">
-                        <h1>Instagram</h1>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="bot4">
-            <div class="join">
-                <h1>Join Now</h1>
-            </div>
-
-            <div class="join1">
-                <img src="image/icon/address.png" alt="주소창" width="250px" height="30px">
-
-                <div class="join2">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse"
-                        target="_blank">
-                        <h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1>
-                    </a>
-                </div>
-
-                <div class="join3">
-                    <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
-                        target="_blank">
-                        <h1 style=color:black>OK</h1>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="bot5">
-            <h1>인천광역시 인하로 100,</h1>
-            <h1>인하대학교 5호관 서,북 접점</h1><br>
-            <h1>+82) 10-5239-9430</h1>
-            <h1>ash_dragon@inha.edu</h1>
-        </div>
-    </div>
-            <!-- <script src="js/activity.js"></script> -->
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    //alert('123');
-                    $('.center').slick({
-                        centerMode: true,
-                        centerPadding: '60px',
-                        slidesToShow: 3,
-                        dots: true,
-                        draggable: true,
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: false,
-                                    centerMode: true,
-                                    centerPadding: '40px',
-                                    slidesToShow: 3
+                <!-- <script src="js/activity.js"></script> -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        //alert('123');
+                        $('.center').slick({
+                            centerMode: true,
+                            centerPadding: '60px',
+                            slidesToShow: 3,
+                            dots: true,
+                            draggable: true,
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 3
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 1
+                                    }
                                 }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    arrows: false,
-                                    centerMode: true,
-                                    centerPadding: '40px',
-                                    slidesToShow: 1
-                                }
-                            }
-                        ]
+                            ]
+                        });
                     });
-                });
 
-            </script>
+                </script>
 </body>
 
 </html>
