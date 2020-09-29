@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>인하벤처클럽</title>
-    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <!-- Not Working
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
     <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico" />
+
+
+
     <style>
         body {
             background-color: #2a2e3c;
@@ -218,18 +226,14 @@
             margin-top: 30px;
         }
 
-        .js {
-            margin-left: 20px;
-        }
-
-        .entire .start1 {
-            margin-left: 30px;
-        }
-
         .entire .start {
             position: fixed;
-            width: 6%;
-            margin-left: 22px;
+            width: 30%;
+            margin-left: 40px;
+        }
+
+        .side {
+            margin-left: 10px;
         }
 
         .entire .challenge0 {
@@ -313,31 +317,32 @@
 
         <div class="start">
 
-            <div class="js">
+            <div class="js" style="font-size: 10px">
+
                 <h1>ACTIVITY</h1>
-            </div>
-            <div class="start1">
                 <br>
-                <a href="#challenge" style="font-size: 10px">
-                    <h1>1. 이론</h1>
-                </a><br>
-
-                <a href="#challenge3" style="font-size: 10px">
-                    <h1>2. 도전</h1>
-                </a><br>
+                <div class='side'>
+                    <a href="#challenge" style="font-size: 10px">
+                        <h1>1. 이론</h1>
+                    </a><br>
 
 
-                <a href="#challenge4" style="font-size: 10px">
-                    <h1>3. 실전</h1>
-                </a><br>
+                    <a href="#challenge3" style="font-size: 10px">
+                        <h1>2. 도전</h1>
+                    </a><br>
+
+                    <a href="#challenge4" style="font-size: 10px">
+                        <h1>3. 실전</h1>
+                    </a><br>
 
 
-                <a href="#challenge5" style="font-size: 10px">
-                    <h1>4. 기타</h1>
-                </a>
+                    <a href="#challenge5" style="font-size: 10px">
+                        <h1>4. 기타</h1>
+                    </a>
+                </div>
             </div>
         </div>
-        <div style="width:80%;">
+        <div style="width : 80%;">
             <div style="border-left:2px solid gray; margin-left: 175px">
 
                 <div class="challenge0" style="font-weight: bold">
@@ -506,6 +511,10 @@
                                     <div class="challenge2" style="font-size: 6px">
                                         <h1>실전 상황에 부딪혀보며 경험해보는 활동</h1>
                                     </div>
+
+                                    <div class="challenge2" style="font-size: 6px">
+                                        <h1>실전 상황에 부딪혀보며 경험해보는 활동</h1>
+                                    </div>
                                     <div class="challenge1">
                                         <div style="width:80%;">
                                             <div
@@ -525,10 +534,9 @@
                                                 <h1>관련링크</h1>
                                             </div>
                                             <div class="rink">
-                                                <a
-                                                    href="performance.html">2020
+                                                <a href="performance.html">2020
                                                     창업 실적 더보기</a><br>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -639,7 +647,7 @@
                                                     <img src="image/activityImage/기타/소모임/소모임12.png">
                                                     <img src="image/activityImage/기타/소모임/소모임13.png">
                                                     <img src="image/activityImage/기타/소모임/소모임14.png">
-                                                  
+
 
                                                     <!--                        여기에 강연 사진 3개더 추가-->
                                                 </div>
@@ -675,7 +683,8 @@
                                             </div>
                                             <p style="margin-top: 20px">
 
-                                                다양한 아이디어를 얻기 위해 데모데이와 같은 창업 관련 행사에 합니다. 또한 산업에 관한 다양한 정보를 얻기 위해 여러 종류의 전시회나 박람회에 함께 참여하기도 합니다.
+                                                다양한 아이디어를 얻기 위해 데모데이와 같은 창업 관련 행사에 합니다. 또한 산업에 관한 다양한 정보를 얻기 위해 여러 종류의
+                                                전시회나 박람회에 함께 참여하기도 합니다.
                                             </p>
                                         </div>
 
