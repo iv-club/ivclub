@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<head>
+    <title>IVC</title>
+    <meta charset = "UTF-8">
+    
+    <style>
+        body {
+            background-color: #2a2e3c;
+            min-width: 1500px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+
+        }
+
+        .up {
+            display: flex;
+            font-size: 7px;
+            margin-bottom: 10px;
+        }
+
+        .rink a:link {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:visited {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:active {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .rink a:hover {
+            text-decoration: none;
+            color: lightseagreen;
+        }
+
+        .up .up0 {
+            margin-right: 550px;
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+
+        .up .up1 {
+            margin-left: 180px;
+            margin-top: 5px;
+        }
+
+        .up .up2 {
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+
+        .up .up3 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+        .up .up4 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+        .up .up5 {
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+
+
+
+        .bot {
+            margin-top: 100px;
+            font-size: 5px;
+            display: flex;
+            width: 1500px;
+        }
+
+        .bot1 {
+            margin-left: 50px;
+            color: #fdfd23;
+        }
+
+        .bot2 {
+            margin-left: 200px;
+
+        }
+
+        .bot3 {
+            margin-left: 200px;
+
+        }
+
+        .bot4 {
+            margin-left: 200px;
+
+        }
+
+        .bot5 {
+            margin-left: 150px;
+
+        }
+
+        .bi1 {
+            display: flex;
+        }
+
+        .bi1 .bi1t {
+            margin-left: 20px;
+        }
+
+        .bi2 {
+            display: flex;
+        }
+
+        .bi2 .bi2t {
+            margin-left: 20px;
+        }
+
+        .bi3 {
+            display: flex;
+        }
+
+        .bi3 .bi3t {
+            margin-left: 20px;
+        }
+
+        .ib1 {
+            margin-top: 5px;
+        }
+
+        .ib2 {
+            margin-top: 5px;
+        }
+
+        .ib3 {
+            margin-top: 5px;
+        }
+
+        .join {
+            color: #fdfd23;
+        }
+
+        .join1 {
+            position: relative;
+            background-size: cover;
+        }
+
+        .join2 {
+            position: absolute;
+            top: 45%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+            font-size: 5px;
+            z-index: 2;
+
+        }
+
+        .join3 {
+            position: absolute;
+            top: 45%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            font-size: 5px;
+            z-index: 2;
+            color: black;
+        }
+
+        #challenge0 {
+            font-size: 15px;
+            color: #fdfd23;
+
+        }
+
+
+        
+
+        .entire {
+            font-size: 10px;
+            display: flex;
+            margin-top: 30px;
+        }
+        .entire .js{
+            margin-left: 12px;
+        }
+
+        .entire .start {
+            position: fixed;
+            text-align: center;
+        }
+
+        .entire .challenge0 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-size: 5px;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: orange;
+        }
+
+        div.center img {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #startupImage {
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        button {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: none;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .tab_menu_container {
+            display: flex;
+        }
+
+        .tab_menu_btn {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: grey;
+            width: 200px;
+            height: 50px;
+            transition: 0.3s all;
+        }
+
+        .tab_menu_btn.on {
+            font-family: 'Noto Sans KR', sans-serif;
+            border-bottom: 2px solid seagreen;
+            font-weight: 700;
+            color: seagreen;
+        }
+
+        .tab_menu_btn:hover {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: seagreen;
+        }
+
+        .tab_box {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab_box.on {
+            display: block;
+        }
+
+
+
+        /*------------------------------------------------*/
+        pre {
+            font-size: 20px;
+            margin-left:0px
+            
+        }
+
+        highlight{
+            color:yellow;
+        }
+
+        btn1 {
+            width: 40px;
+            height: 25px;
+            border-radius: 25%;
+            border:1px solid yellow;
+            font-size:15px;
+            text-align:center;
+        }
+        btn2 {
+            width: 1000px;
+            height: 300px;
+            border-radius: 30px;
+            border:5px solid gray;
+            background-color:yellow;
+            font-size:25px;
+            color:black;
+            text-align:center;
+        }
+         /*----------------------------------------------*/
+      
+    </style>
+
+</head>
+<body>
+
+    <div class="up" style="font-family: 'Noto Sans KR', sans-serif;">
+        <div class="up0">
+            <a href="index.html">
+                <h1>INHAVENTURECLUB</h1>
+            </a>
+        </div>
+        <div class="up1">
+            <a href="index.html">
+                <h1>HOME</h1>
+            </a>
+        </div>
+        <div class="up2">
+            <a href="ivc.html">
+                <h1>IVC</h1>
+            </a>
+        </div>
+        <div class="up3">
+            <a href="activity.html">
+                <h1>ACTIVITY</h1>
+            </a>
+        </div>
+        <div class="up4">
+            <a href="performance.html">
+                <h1>PERFORMANCE</h1>
+            </a>
+        </div>
+        <div class="up5">
+            <a href="news.html">
+                <h1>NEWS</h1>
+            </a>
+        </div>
+    </div>
+    
+    <div class="entire">
+    
+        <div class="start">
+    
+            <div class="js">
+                <h1>IVC</h1>
+            </div>
+            <div class="start1">
+                <br>
+                <a href="#info" style="font-size: 10px">
+                    <h1>  동아리 소개  </h1>
+                </a><br>
+    
+                <a href="#history" style="font-size: 10px">
+                    <h1>  연혁  </h1>
+                </a><br>
+            </div>
+
+
+        </div>
+        <div style="width:80%; text-align:center;" >
+            <div style="border-left:2px solid gray; margin-left: 175px">
+    
+                <div class="challenge0" style="font-weight: bold">
+    
+                    
+                    <div class="oh">
+                    <btn1>  소개 </btn1>
+                    <div id="info">
+                            <p style="text-align: center">
+                            <h1>No.1 창업네트워크 <highlight>인하벤처클럽</highlight> </h1>
+                            </p>    
+                    </div>
+
+                        
+                        
+                        <pre>
+                            "
+                            <highlight>INHA VENTURE CLUB</highlight>은 산학 협력단 소속의 창업동아리로 시작하여
+                            실제 창업을 진행하고 각종 창업 공모전에 출전 및 입상하며
+                            기업 공모전, 대외 활동 등 여러 방면에서 두각을 드러내고 있습니다.
+                            "
+                        
+                            수상경력, 개인의 능력은 중요하지 않습니다.
+                            도전 정신과 열정, 동아리에 대한 애정, 사람 사이의 정 그것으로 충분합니다.
+                            인하벤처클럽에 들어와 새로운 도전과 경험으로 자신의 가치와 능력을 발견하여
+                            함께 성장하고 싶습니다.
+                            그런 사람들이 모인 곳이 바로 <highlight>"인하벤처클럽"</highlight>입니다.
+                        </pre>
+                        
+
+                        <br><br><br><br><br><br>
+                        <br><br><br><br><br><br>
+                        
+                        <btn2 style="text-align: center;">'  인하 벤처클럽이 걸어온 길  '</btn2>
+                        <hr>
+                        <div id="history">
+                            
+                            <img src="since1.png" width=720px, height = 480px>
+                            <img src="since2.png"  width=720px, height = 480px >
+                        </div>
+    
+                        
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="bot" style="font-family: 'Noto Sans KR', sans-serif;">
+                <div class="bot1">
+                    <h1>INHAVENTURECLUB</h1>
+                </div>
+                <div class="bot2">
+                    <div id="top"><a href="">
+                        <h1>About US</h1>
+                    </a></div>
+    
+                    <br>
+                    <div id="center"><a href=".">
+                        <h1>Contact</h1>
+                    </a></div><br>
+                    <div id="bottom"><a href=".">
+                        <h1>Terms & Conditions</h1>
+                    </a></div>
+                </div>
+    
+                <div class="bot3">
+                    <div class="bi1">
+                        <div class="ib1">
+                            <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/facebook.PNG" alt="페이스북"
+                                                                              width="15pt" height="15pt"></a>
+                        </div>
+                        <div class="bi1t">
+                            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                <h1>Facebook</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bi2">
+                        <div class="ib2">
+                            <a href="javascript:alert('곧 업데이트 예정입니다.');"><img src="image/icon/twitter.PNG" alt="트위터"
+                                                                              width="15pt" height="15pt"></a>
+                        </div>
+                        <div class="bi2t">
+                            <a href="javascript:alert('곧 업데이트 예정입니다.');">
+                                <h1>Twitter</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bi3">
+    
+                        <div class="ib3">
+                            <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank"> <img
+                                    src="image/icon/instagram.PNG" alt="인스타그램" width="15pt" height="15pt"></a>
+                        </div>
+    
+                        <div class="bi3t">
+                            <a href="https://www.instagram.com/inha_ventureclub/?hl=ko" target="_blank">
+                                <h1>Instagram</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bot4">
+                    <div class="join">
+                        <h1>Join Now</h1>
+                    </div>
+    
+                    <div class="join1">
+                        <img src="image/icon/address.png" alt="주소창" width="250px" height="30px">
+    
+                        <div class="join2">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse"
+                               target="_blank">
+                                <h1>https://forms.gle/5VWtrNB1pxf8kvSZ6</h1>
+                            </a>
+                        </div>
+    
+                        <div class="join3">
+                            <a href=https://docs.google.com/forms/d/e/1FAIpQLSdSGxU7N3dduKYbQwfWUfFiSwfqQGoXNX9M0dOvYwYm5qp2Rg/formResponse
+                               target="_blank">
+                                <h1 style=color:black>OK</h1>
+                            </a>
+                        </div>
+    
+                    </div>
+                    </div>
+    
+                    <div class="bot5">
+                        <h1>인천광역시 인하로 100,</h1>
+                        <h1>인하대학교 5호관 서,북 접점</h1><br>
+                        <h1>+82) 10-5239-9430</h1>
+                        <h1>ash_dragon@inha.edu</h1>
+                    </div>
+                </div>
+                <!-- <script src="js/activity.js"></script> -->
+                <script type="text/javascript">
+                    $('.tab_menu_btn').on('click', function () {
+                        //버튼 색 제거,추가
+                        $('.tab_menu_btn').removeClass('on');
+                        $(this).addClass('on')
+    
+                        //컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
+                        var idx = $('.tab_menu_btn').index(this);
+    
+                        $('.tab_box').hide();
+                        $('.tab_box').eq(idx).show();
+                    });
+    
+                </script>
+
+
+</body>
